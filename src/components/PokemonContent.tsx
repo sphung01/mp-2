@@ -8,7 +8,13 @@ const StyledPokeDexInfoDiv = styled.div`
     border-radius: 15px;
     width: 300px;
     background-color: black;
-    margin: 2rem auto;
+    margin: 5rem auto;
+    color: white;
+    font-size: calc(12px + 1vw);
+`;
+
+const StyledImgDiv = styled.div`  
+    height: 5vh;
 `;
 
 export default function PokemonContent(props : { data:PokemonInfo[] } ){
@@ -18,7 +24,9 @@ export default function PokemonContent(props : { data:PokemonInfo[] } ){
                 props.data.map((pokemon: PokemonInfo) =>
                     <div key={pokemon.id}>
                         <h1>{pokemon.name.toUpperCase()}</h1>
-                        <img src={pokemon.sprites.other.showdown.front_default} alt={`This is a ${pokemon.name}`}/>
+                        <StyledImgDiv>
+                            <img src={pokemon.sprites.other.showdown.front_default} alt={`This is a ${pokemon.name}`}/>
+                        </StyledImgDiv>
                         <StyledPokeDexInfoDiv>
                             <h2>PokeDex ID: {pokemon.id}</h2>
                             <h2>Weight: {pokemon.weight/10} kg</h2>

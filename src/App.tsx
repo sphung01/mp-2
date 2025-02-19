@@ -1,4 +1,3 @@
-import './App.css'
 import PokemonContent from './components/PokemonContent.tsx';
 import { useState, useEffect } from "react";
 import { PokemonInfo } from "./interfaces/PokemonInfo.ts";
@@ -9,11 +8,14 @@ const ParentDiv = styled.div`
     flex-direction: column;
     width: 80vw;
     margin: auto;
-    border: 10px darkgoldenrod groove;
-    border-color: limegreen;
+    border: 10px groove;
     border-radius: 15px;
     justify-content: center;
-    background-color: deepskyblue;
+    background-color: red;
+    font-size: calc(12px + 1vw);
+    text-align: center;
+    font-family: 'MyCustomFont';
+    color: white;
 `;
 
 const StyledInput = styled.input`
@@ -21,7 +23,12 @@ const StyledInput = styled.input`
     height: 40px;
     margin: auto;
     text-align: center;
-    font-size: calc(30px + 1.5vw);
+    font-size: calc(50px + 1.5vw);
+    font-family: 'MyCustomFont';
+    border: 10px groove;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
 `;
 
 function App() {
@@ -33,6 +40,8 @@ function App() {
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeNum}`);
             const data: PokemonInfo = await response.json();
             setData([data]);
+            const audio = new Audio(data.cries.latest);
+            audio.play()
             console.log(response);
         }
         fetchPokemonData()
