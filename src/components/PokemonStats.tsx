@@ -21,7 +21,7 @@ export default function PokemonStats({stat}:{stat: StatProps}) {
             <StatContainer>
                 <strong>{stat.stat.name.toUpperCase()}: </strong>
                 {stat.base_stat}  
-                <StatBar style={{ width:`${percentageBar}%` }}></StatBar> {/* I do not know any other way to get the "percentageBar" value */}
+                <StatBar style={{ width:`${percentageBar}%` }} /* I do not know any other way to get the "percentageBar" value */></StatBar>
             </StatContainer>
         </p>
     )
