@@ -24,5 +24,5 @@ export default function PokemonStats({stat}:{stat: StatProps}) {
                 <StatBar style={{ width:`${percentageBar}%` }} /* I do not know any other way to get the "percentageBar" value */></StatBar>
             </StatContainer>
         </p>
-    )
+    );
 }

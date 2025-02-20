@@ -17,5 +17,6 @@ export interface PokemonInfo {
 }
 
 export interface StatProps{
-    base_stat: number; stat: { name: string };
+  base_stat: number; 
+  stat: { name: string };
 }

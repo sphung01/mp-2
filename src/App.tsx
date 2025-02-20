@@ -54,7 +54,7 @@ function App() {
             <h1>Choose Your Pokemon!</h1>
             <StyledInput type="number" min={1} max={151} value={pokeNum} 
             onChange={(e) => {
-                setPokeNum(Number(e.target.value))
+                setPokeNum(Number(e.target.value));
             }}/>
             <PokemonContent data={data}/>
         </ParentDiv>
