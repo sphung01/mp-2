@@ -1,7 +1,7 @@
 import PokemonContent from './components/PokemonContent.tsx';
 import { useState, useEffect } from "react";
 import { PokemonInfo } from "./interfaces/PokemonInfo.ts";
-import styled from "Styled-Components";
+import styled from "styled-components";
 
 const ParentDiv = styled.div`
     display: flex;
