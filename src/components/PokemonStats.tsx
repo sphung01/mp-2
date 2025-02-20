@@ -1,5 +1,5 @@
 import { StatProps } from "../interfaces/PokemonInfo";
-import styled from "Styled-Components";
+import styled from "styled-components";
 
 const StatContainer = styled.div`
     margin: 0 5px;
