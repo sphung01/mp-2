@@ -41,7 +41,7 @@ function App() {
             const data: PokemonInfo = await response.json();
             setData([data]);
             const audio = new Audio(data.cries.latest);
-            audio.play()
+            audio.play();
             console.log(response);
         }
         fetchPokemonData()
