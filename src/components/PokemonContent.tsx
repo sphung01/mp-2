@@ -1,12 +1,12 @@
 import { PokemonInfo } from "../interfaces/PokemonInfo.ts";
 import PokemonStats from "./PokemonStats.tsx";
-import styled from "styled-components";
+import styled from "Styled-Components";
 
 const StyledPokeDexInfoDiv = styled.div`
     border: 10px;
     border-style: groove;
     border-radius: 15px;
-    width: 300px;
+    width: 50vw;
     background-color: black;
     margin: 5rem auto;
     color: white;

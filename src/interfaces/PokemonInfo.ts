@@ -11,6 +11,9 @@ export interface PokemonInfo {
   stats: StatProps[];
   weight: number;
   height: number;
+  cries: {
+    latest: string;
+  }
 }
 
 export interface StatProps{
