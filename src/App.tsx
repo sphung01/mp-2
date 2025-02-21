@@ -52,7 +52,7 @@ function App() {
     return(
         <ParentDiv>
             <h1>Choose Your Pokemon!</h1>
-            <StyledInput type="number" min={1} max={151} value={pokeNum} 
+            <StyledInput type="number" min={1} max={1025} value={pokeNum} 
             onChange={(e) => {
                 setPokeNum(Number(e.target.value));
             }}/>
