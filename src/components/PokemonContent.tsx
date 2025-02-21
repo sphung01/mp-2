@@ -25,7 +25,7 @@ export default function PokemonContent(props : { data:PokemonInfo[] } ){
                     <div key={pokemon.id}>
                         <h1>{pokemon.name.toUpperCase()}</h1>
                         <StyledImgDiv>
-                            <img src={pokemon.sprites.other.showdown.front_default} alt={`This is a ${pokemon.name}`}/>
+                            <img src={pokemon.sprites.other.showdown.front_default} alt={`Sprite is not available for this pokemon`}/>
                         </StyledImgDiv>
                         <StyledPokeDexInfoDiv>
                             <h2>PokeDex ID: {pokemon.id}</h2>
